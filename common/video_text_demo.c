@@ -131,7 +131,7 @@ void test_video_text(void) {
     display_pico_logo(x+0, 0+1);
     display_RV32_logo(x+10, 0);
 
-    display_qrcode(SCREEN_DX - QR_CODE_DX, SCREEN_DY - QR_CODE_DY -1);
+    display_qrcode(SCREEN_DX - QR_CODE_DX, SCREEN_DY - QR_CODE_DY -2);
 
     line = 3;
     display_set_text_color(COLOR_WHITE);
@@ -149,18 +149,19 @@ void test_video_text(void) {
     display_set_text_color(COLOR_SILVER);
     display_string_xy(5, line++, "* Resolution             : ");
     print_bcd(SCREEN_DX * 16);
-    display_string_xy(5, line++, " x ");
+    display_string(" x ");
     print_bcd(SCREEN_DY * 24);
-    display_string_xy(5, line++, " pixels.");
+    display_string(" pixels.");
     display_string_xy(5, line++, "* Refresh Rate           : ");
     print_bcd(SCREEN_REFRESH);
-    display_string_xy(5, line++, " Hz.");
+    display_string(" Hz.");
     display_string_xy(5, line++, "* Display                : ");
     print_bcd(SCREEN_DX);
-    display_string_xy(5, line++, " x ");
+    display_string(" x ");
     print_bcd(SCREEN_DY);
-    display_string_xy(5, line++, " characters in 16 colors.");
+    display_string(" characters in 16 colors.");
     display_string_xy(5, line++, "* Characters Resolution  : 16 x 24 pixels.");
+
     line++;
     display_set_text_color(COLOR_WHITE);
     display_string_xy(10, line++, "16-color palette        ");
