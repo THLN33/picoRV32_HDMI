@@ -162,6 +162,7 @@ void test_video_text(void) {
     display_string(" characters in 16 colors.");
     display_string_xy(5, line++, "* Characters Resolution  : 16 x 24 pixels.");
 
+
     line++;
     display_set_text_color(COLOR_WHITE);
     display_string_xy(10, line++, "16-color palette        ");
