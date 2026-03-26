@@ -1,0 +1,11 @@
+# --- Consigne spécifique ---
+# Exclure le répertoire d'implémentation
+Debug_Boot/
+Debug_App/
+
+
+
+
+# --- Fichiers système et divers ---
+.DS_Store
+Thumbs.db
